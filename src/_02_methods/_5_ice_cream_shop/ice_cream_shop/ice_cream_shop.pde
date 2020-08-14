@@ -30,8 +30,7 @@ void draw() {
   addScoop("chocolate");
   addScoop("Vanilla");
   addScoop("Strawberry"); 
-  scoops = 0;
-  coneY=320;
+addSprinkle(7);
 }
 void makeIceCreamCone(){
      noStroke();
