@@ -19,14 +19,22 @@ void setup(){
 
 /***********  These are methods for you to use. DON'T CHANGE CODE BELOW THIS LINE !!!   *****************/
 
+
 //Icecream recipe
 int SCOOPSIZE = 150;
 int scoops = 0;
 int coneY = 320;
-
-
+void draw() {
+  makeIceCreamCone();
+  addScoop("chocolate");
+  addScoop("chocolate");
+  addScoop("Vanilla");
+  addScoop("Strawberry"); 
+  scoops = 0;
+  coneY=320;
+}
 void makeIceCreamCone(){
-     //noStroke();
+     noStroke();
      fill(188,126,49);
      triangle(190,320,310,300,255,500);
 }
