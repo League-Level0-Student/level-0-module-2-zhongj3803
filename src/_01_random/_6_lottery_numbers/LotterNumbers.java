@@ -7,16 +7,12 @@ import javax.swing.JOptionPane;
 public class LotterNumbers {
 public static void main(String[] args) {
 Random ran = new Random();
-int number1 = ran.nextInt(50)+1;	
-int number2 = ran.nextInt(50)+1;	
-int number3 = ran.nextInt(50)+1;	
-int number4 = ran.nextInt(50)+1;	
-int number5 = ran.nextInt(50)+1;	
-int number6 = ran.nextInt(50)+1;
+String lottery = "";
+for (int i=0; i<6; i++) {
+	lottery+=(ran.nextInt(50)+1)+" ";
+}
 
-JOptionPane.showMessageDialog(null, "Your lottery numbers are: " + number1 + " " + number2 + " " + number3 + " " + number4 + " " + number5 + " " + number6);
-
-	
+JOptionPane.showMessageDialog(null, lottery);
 	
 }
 }

@@ -14,7 +14,12 @@ void setup(){
      // Use the method provided to add some sprinkles to your ice cream
 
      // Write code to add a cherry to the top of your ice cream. Hint: ellipse
-
+makeIceCreamCone();
+  addScoop("chocolate");
+  addScoop("chocolate");
+  addScoop("Vanilla");
+  addScoop("Strawberry"); 
+addSprinkle(7);
 }
 
 /***********  These are methods for you to use. DON'T CHANGE CODE BELOW THIS LINE !!!   *****************/
@@ -24,14 +29,7 @@ void setup(){
 int SCOOPSIZE = 150;
 int scoops = 0;
 int coneY = 320;
-void draw() {
-  makeIceCreamCone();
-  addScoop("chocolate");
-  addScoop("chocolate");
-  addScoop("Vanilla");
-  addScoop("Strawberry"); 
-addSprinkle(7);
-}
+
 void makeIceCreamCone(){
      noStroke();
      fill(188,126,49);

@@ -1,7 +1,6 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
-
 package _02_methods._2_safe_cracker;
 
 import java.applet.AudioClip;
@@ -18,14 +17,12 @@ import javax.swing.JOptionPane;
 public class SafeCracker {
 
 	public static void main(String[] args) {
-		int x = 0;
 		/*
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-		for (int i = 0; i<101; i++) {
-			tryCode(9999999-x);
-			x++;
+		for (int i = 0; i < 101; i++) {
+			tryCode(9999999 - i);
 		}
 
 	}
